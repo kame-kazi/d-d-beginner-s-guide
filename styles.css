@@ -6,8 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 #navbar {
   position: fixed;
   left: 0;
@@ -17,60 +15,84 @@ html {
   background-color: #fff2e6;
   overflow-y: auto;
   border-right: 2px dotted #660000;
-  padding: 10px
+  padding: 10px;
 }
-
-
 
 body {
   font-family: garamond, serif;
   font-size: 1.3rem;
   background-color: #fff2e6;
   padding-left: 330px;
-  padding-right: 10px
+  padding-right: 10px;
 }
 
+/* Navbar for smaller screens */
 @media (max-width: 768px) {
   #navbar {
-    position: absolute;
+    position: static;
     width: 100%;
     height: auto;
+    border-right: none;
+    border-bottom: 2px dotted #660000;
+    padding: 10px;
   }
 
   body {
-    padding: auto;
-    margin: auto
+    padding: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Space between links */
+  }
+  
+  .nav-link {
+    font-size: 1rem; /* Slightly smaller text for links on mobile */
   }
 }
 
-nav > ul > li {
-  list-style: none
+/* General content adjustments for mobile */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.5rem; /* Slightly smaller headers for mobile */
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+    text-indent: 1rem;
+  }
+
+  code {
+    font-size: 0.9rem; /* Smaller code block text for readability */
+  }
+
+  main {
+    padding-top: 10px;
+  }
 }
 
-.nav-link {
-  display: flex;
-  text-decoration: none;
-  color: black;
-  margin-left: -30px;
-  border-bottom: 2px dotted #660000;
-  padding-bottom: 20px;
-  padding-top: 20px
-}
+/* Fine-tuning for very small screens (phones) */
+@media (max-width: 480px) {
+  #navbar ul {
+    padding: 0;
+    gap: 5px;
+  }
 
-p {
-  text-indent: 2rem;
-}
+  header {
+    font-size: 1.25rem;
+  }
 
-header {
-  font-weight: 800;
-  font-size: 1.75rem;
-  color: #660000
-}
+  h1 {
+    font-size: 1.1rem;
+  }
 
-h1 {
-  font-size: 1.5rem
-}
-
-code {
-  font-size: 1.2rem
+  p {
+    font-size: 0.9rem;
+  }
 }
