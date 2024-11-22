@@ -32,7 +32,7 @@ body {
 
 @media (max-width: 768px) {
   #navbar {
-    position: static;
+    position: absolute;
     width: 100%;
     height: auto;
   }
