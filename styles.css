@@ -32,14 +32,20 @@ body {
 
 @media (max-width: 768px) {
   #navbar {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: auto;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-right: none;
+    border-bottom: 2px dotted #660000;
   }
 
   body {
-    padding: auto;
-    margin: auto
+    padding-top: 150px; /* Adjust this value to account for the height of the navbar */
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
