@@ -52,7 +52,9 @@ body {
   }
 
   code {
-    font-size: 8px
+    font-size: 10px;
+    position: relative;
+    left: -40px
   }
 
 }
