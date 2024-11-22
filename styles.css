@@ -20,6 +20,10 @@ html {
   padding: 10px
 }
 
+code {
+  font-size: 1.2rem
+}
+
 
 
 body {
@@ -32,20 +36,23 @@ body {
 
 @media (max-width: 768px) {
   #navbar {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: auto;
     top: 0;
     left: 0;
     z-index: 1000;
     border-right: none;
-    border-bottom: 2px dotted #660000;
   }
 
   body {
-    padding-top: 150px; /* Adjust this value to account for the height of the navbar */
+    padding-top: 450px; /* Adjust this value to account for the height of the navbar */
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  code {
+    font-size: .1rem;
   }
 }
 
@@ -77,6 +84,3 @@ h1 {
   font-size: 1.5rem
 }
 
-code {
-  font-size: 1.2rem
-}
